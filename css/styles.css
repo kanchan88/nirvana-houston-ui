@@ -621,6 +621,7 @@ body { counter-reset: course; }
 .action-bar .ab-item:active { background: rgba(201,162,75,0.12); }
 @media (min-width: 980px) { .action-bar { display: none; } }
 @media (max-width: 979px) { body { padding-bottom: 80px; } }
+@media (max-width: 767px) { .hero-btn-row { display: none; } }
 
 /* ---------- Motion: quiet fade-and-rise on enter ---------- */
 .reveal { opacity: 0; transform: translateY(12px); transition: opacity .45s ease-out, transform .45s ease-out; }
