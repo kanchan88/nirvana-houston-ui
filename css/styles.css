@@ -210,13 +210,13 @@ p + p { margin-top: var(--space-5, 20px); }
   position: fixed; inset: 0 0 auto 0; z-index: 100;
   height: var(--header-h);
   display: flex; align-items: center;
-  transition: background .3s ease, box-shadow .3s ease, border-color .3s ease;
-  border-bottom: 1px solid transparent;
-}
-.site-header.solid {
   background: rgba(11,18,32,0.92);
   backdrop-filter: blur(10px);
-  border-bottom-color: var(--navy-600);
+  border-bottom: 1px solid var(--navy-600);
+  transition: background .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.site-header.solid {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.28);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
 
